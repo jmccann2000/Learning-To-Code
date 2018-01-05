@@ -1,0 +1,8 @@
+Lesson 000:
+
+The first lesson is a dipping of the toe into the Python language waters. You must implement the
+load_tokens_from_file_path function defined in the file_reader.py code module. Please refer to the code comments
+in this code module for further instructions.
+
+As these lessons progress, we will enhance and compose the previous lessons work to eventually produce a fully
+functional new programming language called Jmac.

@@ -69,7 +69,7 @@ class TestFileReader(object):
         that the file reader does not *require* multiple tokens to operate without crashing.
         '''
         # Load tokens from the test file
-        tokens = self.file_reader.load_tokens_from_file_path('lesson000/testing/does_not_create_empty_tokens.txt')
+        tokens = self.file_reader.load_tokens_from_file_path('lesson000/testing/single_token.txt')
 
         # Check the tokens were created correctly, splitting on whitespaces
         assert len(tokens) == 1, "Expected 1 tokens, got %d tokens (tokens=%s)" % (len(tokens), tokens)

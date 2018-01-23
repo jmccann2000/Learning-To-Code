@@ -5,11 +5,7 @@
 
 
 class FileReader(object):
-    '''not sure if the function should  go here'''
-    '''
-    This class provides the basic functionality for reading in a code file and decomposing it into its
-    whitespace separated tokens.
-    '''
+
 
     def load_tokens_from_file_path(self, file_path):
         '''
@@ -20,7 +16,9 @@ class FileReader(object):
         @param file_path File path of the code module to read in
         @returns A list of tokens (strings) comprising the contents of the file
         '''
-        test = open(file_path,"r")
-        for line in test:
-            tokens = line.split()
+        tokens=[]
+        with open(file_path, "r") as read:
+            bigline= " ".join(line.strip() for line in read)
+            tokens = bigline.split()
             print(tokens)
+        return tokens
